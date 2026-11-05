@@ -1,5 +1,8 @@
 [mgr]
 prepend_keymap = [
-  { on = "<Enter>", run = "enter", desc = "Disable Enter to open files" },
+  { on = "<Enter>", run = "enter", desc = "Enter the child directory" },
+]
+append_keymap = [
+  { on = [ "g", "a" ], run = "cd ~/AppData", desc = "Go to AppData", for = "windows" },
 ]
 
